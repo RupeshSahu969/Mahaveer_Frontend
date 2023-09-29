@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: "Roboto", sans-serif;
   background-color: #f3f3f3;
+  
 }
 /* <----------------Cart Page Start------------->  */
 #quantitiesButton {
@@ -79,6 +80,7 @@ body {
   box-sizing: border-box;
   padding: 10px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  
 }
 .imgDiv {
   display: flex;
@@ -564,6 +566,8 @@ h1 {
 }
 #belowNavBar {
   box-sizing: border-box;
+  
+  width: 100%;
 }
 #belowNavBar > :nth-child(1) {
   width: 78.7%;
@@ -584,12 +588,14 @@ h1 {
   display: flex;
   margin: auto;
   /* height: 800px; */
+  
 }
 
 #filter {
   position: sticky;
   font-size: 14px;
   top: -1000px;
+  display: none;
 }
 #filter > div {
   display: flex;
@@ -626,11 +632,25 @@ h1 {
 #productBoxContainer {
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
   gap: 20px;
-  padding-left: 30px;
+  
   /* overflow: scroll; */
 }
+@media only screen and (min-width: 480px){
+  #productBoxContainer {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    
+    /* overflow: scroll; */
+  }
+}
+
+
 .productBox {
   height: 420px;
   background-color: white;
@@ -717,6 +737,7 @@ hidden {
 /* <-------------------------Footer Start-----------> */
 .wholefooter {
   margin-top: 60px;
+  border: 1px solid green;
 }
 .footer-container {
   background-color: #8c8d94;
