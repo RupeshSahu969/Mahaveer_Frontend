@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head>Bar
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,7 +20,7 @@
     
   </head>
   <body>
-    <div id="navigationBar">
+    <div id="navigation">
       <div class="nav">
         <div class="left">
           BEAUTY BONANZA Get Your Daily Dose Of Amazing Deals
@@ -81,16 +81,16 @@
       </div>
       <div class="nav2">
         <div>
-          <a href="/nykaa/skinMainPage.html">Skin</a>
-                <a href="/nykaa/makeupMainPage.html">Makeup</a>
-                <a href="/unit2projectr/Auto Slider/naturalHome.html">Hair</a>
-                <a href="/unit2projectr/Auto Slider/personalHome.html">Presonal Care</a>
-                <a href="/unit2projectr/Auto Slider/naturalHome.html">Natural</a>
-                <a href="/Project-Unit-2/Project-Unit-2/Mom_baby1.html">Mom & baby</a>
-                <a href="/Project-Unit-2/Project-Unit-2/Health_Wellness.html">Health & Wellness</a>
-                <a href="/men/men.html">Men</a>
-                <a href="/Project/fragrance/fragrance.html">Fragrance</a>
-                <a href="">LINUX</a>
+          <a href="/men/men.html">Men</a>
+          <a href="">Skin</a>
+          <a href="#">Makeup</a>
+          <a href="#">Hair</a>
+          <a href="#">Presonal Care</a>
+          <a href="#">Natural</a>
+          <a href="#">Mom & baby</a>
+          <a href="#">Health & Wellness</a>
+          <a href="#">Fragrance</a>
+          <a href="#">LINUX</a>
         </div>
       </div>
     </div>
@@ -116,6 +116,7 @@
     </div>
     <!-- <link rel="stylesheet" href="/fragrance/fragrance_perfume/data/fragrance_perfume_data.html"> -->
     <script>
+
       function plusFunction(a) {
         var callDataForPlus = JSON.parse(localStorage.getItem("AddToCartData"));
         var arr = [];
@@ -186,7 +187,7 @@
         var calltry = document.querySelector("#cartPage");
         calltry.innerHTML = "";
         var cartDataForCartPage = JSON.parse(
-          localStorage.getItem("AddToCartData")
+          localStorage.getItem("AddToCartData") 
         );
         console.log(cartDataForCartPage);
         var numOfItemsOnCartPage = document.querySelector(
