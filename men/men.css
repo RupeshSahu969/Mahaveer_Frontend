@@ -390,7 +390,7 @@ body {
   background-image: url("https://adn-static1.nykaa.com/media/wysiwyg/2021/topstrips18.jpg");
   border-radius: 10px;
   position: fixed;
-  width: 98%;
+  width: 100%;
   top: 0;
   z-index: 2;
   align-items: center;
@@ -411,40 +411,17 @@ body {
 .nav1 {
   display: flex;
   color: black;
-  height: 40px;
+  height: 70px;
   padding: 25px 0 0 20px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   position: fixed;
-  width: 98%;
+  width: 100%;
   top: 40px;
   z-index: 2;
   background-color: white;
+  margin-bottom: 100px;
 }
-.nav2 {
-  display: flex;
-  margin-right: 20px;
-  color: gray;
-  height: 40px;
-  padding: 25px 0 0 20px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  margin-top: 100px;
-  width: 98%;
-  /* top: 120px; */
-  position: sticky;
-  top: 90px;
-  z-index: 1;
-  background-color: white;
-}
-.nav2 > div {
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  width: 80%;
-  margin: auto;
-  gap: 10px;
-}
-.left {
-  width: 70%;
-}
+
 .left1 {
   /* width: 70%; */
   margin-left: 100px;
@@ -452,15 +429,16 @@ body {
 }
 .right {
   display: flex;
-  /* justify-content: space-around; */
   width: 40%;
   position: relative;
   top: -10px;
+  margin-left: 300px;
 }
 .right > div {
   position: relative;
   top: 0px;
   left: 15%;
+  justify-content: space-between;
 }
 .right > div > :nth-child(1) {
   width: 250px;
@@ -472,7 +450,7 @@ body {
 .right > div > :nth-child(2) {
   position: relative;
   top: 0px;
-  left: 40px;
+  left: 50px;
 }
 .right > div > :nth-child(3) {
   position: relative;
@@ -632,23 +610,13 @@ h1 {
 #productBoxContainer {
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   gap: 20px;
   
   /* overflow: scroll; */
 }
-@media only screen and (min-width: 480px){
-  #productBoxContainer {
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-    gap: 20px;
-    
-    /* overflow: scroll; */
-  }
-}
+
 
 
 .productBox {
@@ -852,5 +820,159 @@ a {
   line-height: 15px;
   font-size: 13px;
 }
+
+@media only screen and (min-width: 0px) and (max-width: 420px) {
+  #container1,#container2,#container5,#container6,#container9,#container11{
+    grid-template-columns: repeat(1,1fr);
+  grid-template-rows: auto;
+  }
+  #container4,#container7,#container8{
+    grid-template-columns: repeat(1,1fr);
+  grid-template-rows: auto;
+  }
+.nyka{
+display: none;
+}
+.left1 {
+/* width: 70%; */
+margin-left: 0px;
+display: flex;
+}
+
+.right {
+  display: flex;
+  gap: 10px;
+  position: relative;
+  margin-top: 10px;
+  margin-left: -20px;
+}
+.right > div {
+  display: flex;
+  position: relative;
+  gap: 10px;
+  
+}
+.nav {
+position: fixed;
+width: 100%;
+top: 0;
+z-index: 2;
+
+}
+
+
+.nav1{
+position: fixed;
+z-index: 2;
+}
+.nav2{
+width: 100%;
+background-color: #ec407a;
+}
+.nav2 a{
+font-size: 20px;
+}
+.m_1{
+display: none;
+}
+.nav2 > div{
+margin: auto;
+font-size: 20px;
+}
+.nav left{
+font-size: 15px;
+width: 100%;
+}
+
+.right1{
+display: none;
+}
+
+
+input{
+display: none;
+}
+
+  .footer{
+    display: none;
+  }
+  .inputForm{
+    display: none;
+  }
+  .footer_a{
+    display: none;
+  }
+  .sfooter{
+    display: none;
+  }
+  #end{
+    margin-bottom: 40px;
+  }
+  
+  .naykaae{
+    background-color: #ec407a;
+    justify-content: center;
+    height: 50px;
+    border: 1px solid black;
+  }
+  .naykaae p {
+    font-size: 15px;
+  }
+#mainContainer{
+height: 200px;
+margin-top: 10px;
+}
+
+#productBoxContainer {
+width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+  
+}
+.img{
+  width: 100%;
+}
+
+.productBox {
+  height: 400px;
+  background-color: white;
+  border-radius: 4px;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 1px 3px rgb(226 226 226 / 25%), 0 1px 2px rgb(226 226 226 / 50%);
+  margin-top: 0px;
+}
+.productBox > div {
+  margin-top: 8rem;
+  font-size: 15px;
+  
+}
+.productBox img{
+ 
+  margin: auto;
+  width: 150px;
+}
+
+
+} 
+.inputForm button{
+  height: 30px;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: white;
+  margin-top: 5px;
+}
+
+.naykaae p{
+  text-align: center;
+  
+}
+.nav2{
+  margin-top: 100px;
+}
+
 
 /* <-------------------------Footer End-----------> */
