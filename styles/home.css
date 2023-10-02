@@ -562,18 +562,18 @@ h1 {
   
 }
 .nav {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 2;
+  display: none;
 
   /* top right bottom left */
 }
-
+.right a{
+  margin-top: 40px;
+}
 
 .nav1{
   position: fixed;
   z-index: 2;
+  margin-top: -30px;
 }
 .nav2{
   width: 100%;
