@@ -414,6 +414,7 @@ h1 {
     cursor: pointer;
     /* overflow: ; */
   }
+  
   #container2,#container5,#container6,#container9,#container11{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -552,8 +553,8 @@ h1 {
 .right {
   display: flex;
   position: relative;
-  margin-top: 10px;
-  margin-left: -20px;
+  margin-top: 20px;
+  margin-left: -50px;
 }
 .right > div {
   display: flex;
@@ -573,7 +574,7 @@ h1 {
 .nav1{
   position: fixed;
   z-index: 2;
-  margin-top: -30px;
+  margin-top: -40px;
 }
 .nav2{
   width: 100%;
