@@ -7,7 +7,7 @@
 <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" align="center" alt="javascript">
 </p>
 
-<h3 align="center"><a href="https://651b9b69e3393a235f433eda--luxury-druid-b1d7c9.netlify.app/home"><strong>Want to see live preview »</strong></a></h3>
+<h3 align="center"><a href="https://651c2a7ea4b17537eb4b5cf0--super-dango-d8f214.netlify.app/"><strong>Want to see live preview »</strong></a></h3>
 
 <br/>
 
